@@ -12,10 +12,8 @@
   <script>
     function redirectToPage() {
       var username = document.getElementById('username').value;
-      // Construct the URL using the entered username
+      username = username.toLowerCase();
       var redirectURL = "https://shadowschultz.github.io/ZanySlopes/" + username + "/";
-      
-      // Redirect the browser to the new URL
       window.location.href = redirectURL;
     }
   </script>
