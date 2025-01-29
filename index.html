@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Zany Slopes</title>
+</head>
+<body>
+  <h1>Enter Your Username</h1>
+  <input type="text" id="username" placeholder="Enter username" />
+  <button onclick="redirectToPage()">Submit</button>
+
+  <script>
+    function redirectToPage() {
+      var username = document.getElementById('username').value;
+      // Construct the URL using the entered username
+      var redirectURL = "https://shadowschultz.github.io/ZanySlopes/" + username + "/";
+      
+      // Redirect the browser to the new URL
+      window.location.href = redirectURL;
+    }
+  </script>
+</body>
+</html>
