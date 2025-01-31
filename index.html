@@ -13,6 +13,7 @@
     function redirectToPage() {
       var username = document.getElementById('username').value;
       username = username.toLowerCase();
+      if(username == "") {username = "xyzrell.1262546";}
       var redirectURL = "https://shadowschultz.github.io/ZanySlopes/" + username + "/";
       window.location.href = redirectURL;
     }
